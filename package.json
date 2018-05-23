@@ -1,0 +1,9 @@
+{
+  "name": "his-vine-fsda",
+  "version": "1.0.0",
+  "description": "His Vine Free SDA ",
+  "author": "Foyah Z. Freeman, Jr.",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
