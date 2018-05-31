@@ -3,7 +3,7 @@
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.8)) , url('/app/assets/img/antiquity.png');
   background-size: cover;
-  background-position: centered;
+  background-position: center;
   background-attachment: fixed;
   position: relative;
 
@@ -22,31 +22,45 @@
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: centered;
+    text-align: center;
   }
 
   &__primary {
     color: #fff;
-    text-transform: uppercase;
-    backface-visibility: hidden /*Prevents the shake at the end of the title and subtitle animation.*/
+    backface-visibility: hidden; /*Prevents the shake at the end of the title and subtitle animation.*/
+    margin-bottom: 20px;
   }
 
   &__primary-title {
     display: block;
+    text-transform: uppercase;
     font-weight: 300;
-    font-size: 2.5rem;
-    letter-spacing: 10px;
-    margin: 0;
+    font-size: 1.0rem;
+    letter-spacing: 3px;
     animation: moveInLeft 1s ease-out;
-  }
+    margin-bottom: 10px;
+    min-width: 18.75rem;
 
+    @mixin atSmall {
+      font-size: 3.5rem;
+      letter-spacing: 10px;
+      /* margin: 0; */
+    }
+
+  }
+  
   &__primary-subtitle {
     display: block;
     font-weight: 400;
     font-size: 1rem;
-    letter-spacing: 10px;
+    letter-spacing: 2px;
     margin: 0;
     animation: moveInRight 1s ease-out;
+
+    @mixin atSmall {
+      font-size: 1.5rem;
+      letter-spacing: 10px;
+    }
   } 
 }
 
