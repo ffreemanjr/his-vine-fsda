@@ -401,22 +401,37 @@ img {
     display: block;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 1.0rem;
-    letter-spacing: 3px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
     -webkit-animation: moveInLeft 1s ease-out;
             animation: moveInLeft 1s ease-out;
     margin-bottom: 10px;
-    min-width: 18.75rem;
-
+    min-width: 21.875rem;
   }
 
 @media (min-width: 530px) {
 
 .main-header__primary-title {
+      font-size: 1.8rem;
+      letter-spacing: 5px;
+      min-width: 37.5rem
+  }
+  }
+
+@media (min-width: 50rem){
+
+.main-header__primary-title {
+      font-size: 2rem;
+      letter-spacing: 7px;
+      min-width: 43.75rem
+  }
+  }
+
+@media (min-width: 75rem){
+
+.main-header__primary-title {
       font-size: 3.5rem;
       letter-spacing: 10px
-      /* margin: 0; */
-
   }
   }
 
@@ -433,7 +448,24 @@ img {
 @media (min-width: 530px) {
 
 .main-header__primary-subtitle {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      letter-spacing: 5px
+  }
+  }
+
+@media (min-width: 50rem){
+
+.main-header__primary-subtitle {
+      font-size: 2rem;
+      letter-spacing: 7px;
+      min-width: 43.75rem
+  }
+  }
+
+@media (min-width: 75rem){
+
+.main-header__primary-subtitle {
+      font-size: 3.5rem;
       letter-spacing: 10px
   }
   }
@@ -526,6 +558,7 @@ img {
   -webkit-transition: all .2s;
   transition: all .2s;
   position: relative;
+  line-height: normal;
 }
 
 .btn:hover {

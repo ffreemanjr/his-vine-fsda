@@ -4,6 +4,7 @@
   "description": "His Vine Free SDA ",
   "author": "Foyah Z. Freeman, Jr.",
   "dependencies": {
+    "install": "^0.11.0",
     "jquery": "^3.3.1",
     "jquery-smooth-scroll": "2.2.0",
     "lazysizes": "4.0.1",

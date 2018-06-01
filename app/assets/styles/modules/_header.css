@@ -35,18 +35,28 @@
     display: block;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 1.0rem;
-    letter-spacing: 3px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
     animation: moveInLeft 1s ease-out;
     margin-bottom: 10px;
-    min-width: 18.75rem;
+    min-width: 21.875rem;
 
     @mixin atSmall {
-      font-size: 3.5rem;
-      letter-spacing: 10px;
-      /* margin: 0; */
+      font-size: 1.8rem;
+      letter-spacing: 5px;
+      min-width: 37.5rem;
     }
 
+    @mixin atMedium {
+      font-size: 2rem;
+      letter-spacing: 7px;
+      min-width: 43.75rem;
+    }
+
+    @mixin atLarge {
+      font-size: 3.5rem;
+      letter-spacing: 10px;
+    }
   }
   
   &__primary-subtitle {
@@ -58,7 +68,18 @@
     animation: moveInRight 1s ease-out;
 
     @mixin atSmall {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
+      letter-spacing: 5px;
+    }
+
+    @mixin atMedium {
+      font-size: 2rem;
+      letter-spacing: 7px;
+      min-width: 43.75rem;
+    }
+
+    @mixin atLarge {
+      font-size: 3.5rem;
       letter-spacing: 10px;
     }
   } 
